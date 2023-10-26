@@ -1,0 +1,248 @@
+html{ 
+  font-size: 62.5%; 
+    overflow-x: hidden; 
+    scroll-behavior: smooth; 
+    scroll-padding-top: 6rem; 
+   } 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#preloader{
+  background: #fffafc url(images/preloader.gif) no-repeat;
+  background-position:center;
+  background-size: 25%;
+  height:100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  text-decoration-color: #92674a;
+  background-color: #fee2cc;
+}
+#top-container{
+  font-size: 15px;
+  text-decoration-color: #92674a;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.contactclearfix {
+  display: flex;
+  align-items: center;
+}
+
+.contactclearfix ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.contactclearfix li {
+  margin-right: 20px; 
+ }
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+#title{
+  font-size: 2.5rem; 
+  font-weight: bolder; 
+  color:#92674a; 
+}
+a{
+  text-decoration: none;
+}
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width:  90%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.header{ 
+    z-index: 1000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background:#906447; 
+    padding:2rem 9%; 
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
+    font-size:18px;
+   } 
+.header .logo{ 
+    font-size: 2.5rem; 
+    font-weight: bolder; 
+    color:#fff; 
+   } 
+.header .logo i{ 
+    padding-right: .5rem; 
+    color:var(--red); 
+   } 
+.header .navbar a{ 
+    font-size: 2rem; 
+    margin-left: 2rem; 
+    color:#fff; 
+    padding: 10px;
+   } 
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #906447;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.475);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fee2cc;
+  color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+/*slider*/
+.radio{
+  display: none;
+}
+.container {
+  position: relative;
+  max-width: auto;
+}
+.slider {
+  width: 100%;
+  position: absolute;
+  height: 0;
+  padding-top: 56.25%;
+  background: 0#141414;
+  overflow:hidden;
+  border: solid 1px #2e2e2e;
+  box-shadow: 0 0 40px rgba(0,0,0,0.8);
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; Left:0;
+  opacity:0;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: 1.3s ;
+}
+.caption {
+  position: absolute;
+  width: 100%;
+  margin-top: 360px;
+  text-align: center;
+  top: -100%;
+  color:#fff;
+  font-weight: 900;
+  font-size: 50px;
+  padding: 20px;
+  box-shadow: 1em 0 .5em 0 rgba(0,0,0,.3);
+  text-transform: uppercase;
+  letter-spacing: -5px;
+  line-height: 50px;
+  transition: 0.9s;
+}
+.dots{
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dots label{
+width: 15px;
+height: 15px;
+background:#fff;
+margin: 0 10px;
+border-radius: 50%;
+opacity: 0.3;
+cursor: pointer;
+transition: 0.2s ease-in-out;
+}
+.dots label:hover{
+  opacity: 0.7;
+}
+#radio-1:checked~#slide-1,
+#radio-2:checked~#slide-2,
+#radio-3:checked~#slide-3,
+#radio-4:checked~#slide-4 {
+  opacity: 1;
+}
+#radio-1:checked ~ #slide-1 img,
+#radio-2:checked ~ #slide-2 img,
+#radio-3:checked ~ #slide-3 img,
+#radio-4:checked ~ #slide-4 img {
+  transform: scale(1);
+}
+#radio-1:checked~#slide-1 .caption,
+#radio-2:checked~#slide-2 .caption,
+#radio-3:checked~#slide-3 .caption,
+#radio-4:checked~#slide-4 .caption{
+  opacity: 1;
+  top: 7%;
+  font-size: 80px;
+}
+#radio-1:checked ~ .dots #label-1,
+#radio-2:checked ~ .dots #label-2,
+#radio-3:checked ~ .dots #label-3,
+#radio-4:checked ~ .dots #label-4{
+  background: #ffeb3b;
+  opacity: 1;
+}
