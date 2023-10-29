@@ -1,0 +1,1 @@
+url(images/preloader.gif) no-repeat
