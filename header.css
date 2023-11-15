@@ -1,0 +1,142 @@
+#preloader{
+    background: #fffafc url(images/preloader.gif) no-repeat;
+    background-position:center;
+    background-size: 25%;
+    height:100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  
+  }
+  .top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    text-decoration-color: #92674a;
+    background-color: #fee2cc;
+  }
+  #top-container{
+    font-size: 15px;
+    text-decoration-color: #92674a;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactclearfix {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactclearfix ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .contactclearfix li {
+    margin-right: 20px; 
+   }
+  
+  .fa {
+      padding: 5px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+  
+  #title{
+    font-size: 2.5rem; 
+    font-weight: bolder; 
+    color:#92674a; 
+  }
+  a{
+    text-decoration: none;
+  }
+  a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+  
+  .header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width:  90%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  
+  .header{ 
+      z-index: 1000; 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      background:#906447; 
+      padding:2rem 9%; 
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
+      font-size:18px;
+     } 
+  .header .logo{ 
+      font-size: 2.5rem; 
+      font-weight: bolder; 
+      color:#fff; 
+     } 
+  .header .logo i{ 
+      padding-right: .5rem; 
+      color:var(--red); 
+     } 
+  .header .navbar a{ 
+      font-size: 2rem; 
+      margin-left: 2rem; 
+      color:#fff; 
+      padding: 10px;
+     } 
+    
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #906447;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.475);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 0px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #fee2cc;
+    color: #555;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+    
