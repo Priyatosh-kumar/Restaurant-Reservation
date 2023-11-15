@@ -106,5 +106,7 @@ transition: 0.2s ease-in-out;
   opacity: 1;
 }
 .booknow{
-  background-color: #eae0d3;
+  color: #000000;
+  margin-top: 60%;
+  text-align: center;
 }
