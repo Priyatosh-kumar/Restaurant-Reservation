@@ -1,0 +1,76 @@
+.footer-page{
+    background-color: #564c42;
+    background-size: contain; 
+    color: #fff;
+    }
+hr {
+        width: 30%; /* Adjust the width of the line */
+        border: 1px solid #fff; /* Adjust the color of the line */
+        margin: 10px 20% 10px 0;        
+}
+.footer-heads{
+    font-weight: 800;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;        
+} 
+
+.row {
+    display: flex;
+  }
+  
+  /* Create four equal columns that share the available space */
+  .column {
+    
+    margin: 20px;
+    text-align: left;
+    flex: 1;
+    padding: 10px;
+    /* height: 300px; Remove the fixed height */
+    box-sizing: border-box; /* Add this line to use border-box for padding */
+  }
+.footer-page p{
+    font-size: 15px;
+    margin-top: 30px;
+}
+.book-table {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    width: 250px;
+}
+.book-table label {
+    display: block;
+    margin-bottom: 10px;
+}
+.book-table input[type="text"],
+.book-table input[type="number"],
+.book-table input[type="time"],
+.book-table input[type="date"],
+.book-table select,
+.book-table input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.book-table input[type="submit"] {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #eae0d3;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+.book-table input[type="submit"]:hover {
+    background-color: #eae0d3;
+}
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}

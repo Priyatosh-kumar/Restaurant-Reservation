@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="footer-page.css">
 </head>
 <body>
   <div id="preloader">
@@ -106,15 +107,101 @@
 </div>
 
 <div class="booknow">
-  <p><span>THE SAFFRON TAJ</span></p>
-  <p><span>Saffron Taj is an all-day dining restaurant in the heart of LPU.</span></p>
-  
+  <p><span >THE SAFFRON TAJ</span ></p>
+  <p><span >Saffron Taj is an all-day dining restaurant in the heart of LPU.</span ></p>
+  <button class="btn">Book Now</button>
+  <p>The latest from @TheSaffronTaj</p>
+  <p>Check out what THE SAFFRON TAJ team get up to, the latest feedback from our followers and a whole lot of Instagram snaps by our guests</p>
 </div>
 
-<div class="home-book">
-  
-</div>
+<div class="footer-page">
+  <div class="row">
+    <div class="column" >
+      <span class="footer-heads" >Find Us</span >
+      <hr>
+      <p>Level-6,Block-27,LPU,Phagwara</p>
+      <p>Punjab,IN</p>      
+      <p>0207 495 2211</p>
+      <span>restaurant reservations</span>
+      <br>
+      <p>0207 592 1373</p>
+      <span>group reservations</span>
+      <br>
+      <p>mail: lpu@thesaffrontaj.com</p>
 
+    </div>
+    <div class="column" >
+      <span class="footer-heads">Opening Hours</span >
+        <hr>
+      <p>Monday - Thursday </p>
+      <span>7:30pm - 12pm</span>
+      <br>
+      <p>Friday</p>
+      <span>7:30pm - 1pm</span>
+      <br>
+      <p>Saturday</p>
+      <span>7:30pm - 12pm</span>
+      <p>Sunday</p>
+      <span>7:30am - 10pm </span>
+      <br>
+      <br>
+      <i>
+      Please note we are open for breakfast to the public on Saturday and Sunday.    
+      </i>      
+      <p>Christmas Day</p>
+      <span>11am - 11pm</span>
+      <p>New Year's Eve</p>
+      <span>7:30am - 3am</span>
+      <p><hr><span class="footer-heads"  >Restaurant Information</span ><hr></p>
+      <span>Casual dress code</span><br>
+      <span>No smoking allowed</span><br>
+      <span>Small or guide dogs only</span><br>
+      <span>Children of all ages welcome</span><br>
+      <span>Payment by credit / debit card</span>
+    </div>
+    <div class="column" >
+      <span class="footer-heads">Menus & Wine Lists</span >
+        <hr>
+      <p>A La Carte Menu</p>
+      <p>Drinks Menu</p>
+      <hr>
+      <p>View All Menus</p>
+    </div>
+    <div class="column" >
+      <span class="footer-heads">Book a table</span >
+      <hr>
+      <div class="book-table">
+        <form action="book_table.php" method="post">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" step="1800" required>
+                        
+            <label for="party_size">Party size:</label>
+            <select id="party_size" name="party_size" required>
+              <option value="" disabled selected>* Party Size</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            
+            <input type="submit" value="Book now">
+        </form>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="footer"><p>Design by Priyatosh Kumar</p></div>
 <script src="script.js"></script>
 <script src="header-and-preloader.js" ></script>
 

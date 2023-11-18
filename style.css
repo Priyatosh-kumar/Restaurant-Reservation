@@ -107,6 +107,35 @@ transition: 0.2s ease-in-out;
 }
 .booknow{
   color: #000000;
-  margin-top: 60%;
+  padding-top: 60%;
+  padding-bottom: 3%;
   text-align: center;
+  background-color: #eae0d3;
+}
+.booknow p{
+  padding: 10px;
+  font-size: 15px;
+}
+
+.booknow p:nth-child(1), .booknow p:nth-child(4) {
+  font-size: 25px;
+  font-weight: 900;
+  color: #30302f;
+}
+.booknow .btn {
+  
+  background-color: #5f5348;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.booknow .btn:hover {
+  background-color: black;
+  color: white;
 }
