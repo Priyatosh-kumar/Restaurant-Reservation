@@ -33,7 +33,14 @@ body {
     width: 60%;
     height: auto;
     border-right: 1px solid #ddd;
+    
+
   }
+.card:hover {
+  transition: transform 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
 
 .card-content {
     flex: 1;

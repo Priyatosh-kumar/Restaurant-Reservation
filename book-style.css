@@ -15,7 +15,15 @@ body {
   margin-right: auto;
   width: 80%;
   height: 500px;
-
+}
+.headline{
+  text-align: center;
+  color: #30302f;
+  font-size: 15px;
+}
+.para-1{
+  font-size:30px;
+  font-weight: 900;
 }
 .book-row{
   display: flex;
@@ -28,6 +36,9 @@ body {
   padding: 30px;
   /* height: 300px; Remove the fixed height */
   box-sizing: border-box; /* Add this line to use border-box for padding */
+}
+.book-column img{
+  width:600px ;
 }
 .bic {
   display: inline-block;
