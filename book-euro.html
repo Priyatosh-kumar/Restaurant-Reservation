@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> The Saffron Taj </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="header.css">
-<link rel="stylesheet" href="footer-page.css">
-<link rel="stylesheet" href="booktable.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The TheSaffronTaj</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer-page.css">
+    <link rel="stylesheet" href="book-style.css">
+
 </head>
 <body>
-<div id="preloader"></div>
+    <div id="preloader"></div>
   
 <div class="top-container" id="top-container">
 		<a href="#" class="logo">
@@ -67,42 +68,90 @@
   </nav>
 </div>
 
-<div class="btmain1">
-    <div class="card">
-        <img src="images/indian.webp" alt="Image 1">
-        <div class="card-content">
-          <span class="cuisine-heads">Book for Indian</span>
-          <p>Embark on a culinary journey with our authentic Indian cuisine, where vibrant flavors, aromatic spices, and time-honored recipes come together to create an unforgettable dining experience.</p>
+
+<section>
+    <img class="top-image" src="images/book-euro.jpg" alt="book-euro">
+    <div class="headline">
+      <p class="para-1">Book a Table at The Saffron Taj (European Division)</p>
+      <p class="para-2">We look forward to welcoming you to The Saffron Taj. If there is no availability for the European experience, please call the Reservations Team on 0207 495 2211.</p>
+    </div>
+
+    <div class="bic"> 
+      <div class="book-row">
+        <div class="book-column">
+          <img src="images/grp1-12.png" alt="Group 1-12">         
+          <form action="book_table.php" method="post">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" step="1800" required>
+                        
+            <label for="party_size">Party size:</label>
+            <select id="party_size" name="party_size" required>
+              <option value="" disabled selected>* Party Size</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            
+            <input type="submit" value="Book now">
+        </form>
+        </div>
+        <div class="book-column">
+          <img src="images/grp-13+.png" alt="Group 13+">
+          <form action="book_table.php" method="post">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="First name" required>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+
+            <label for="phone">Enter a phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 1234 567 890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" step="1800" required>
+
+            <label for="party_size">Party size:</label>
+            <select id="party_size" name="party_size" required>
+              <option value="" disabled selected>* Party Size</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            
+            <input type="submit" value="Book now">
+        </form>
+
         </div>
       </div>
-  
-      <div class="card">
-        <img src="images/chinese.jpg" alt="Image 2">
-        <div class="card-content">
-          <span class="cuisine-heads">Book for Chinese</span>
-          <p>Savor the artistry of our Chinese cuisine, where time-honored recipes meet contemporary flair, delivering a symphony of flavors that elevate your dining experience.</p>
-        </div>
-      </div>
-      
-</div>
-<div class="btmain2">
-    <div class="card">
-        <img src="images/french.jpg" alt="Image 3">
-        <div class="card-content">
-          <span class="cuisine-heads">Book for French</span>
-          <p>Embark on a gastronomic journey with our authentic French cuisine, where rich flavors, aromatic herbs, and time-honored recipes come together to create an unforgettable dining experience.</p>
-        </div>
-      </div>
-  
-      <div class="card">
-        <img src="images/italian.jpg" alt="Image 4">
-        <div class="card-content">
-          <span class="cuisine-heads">Book for Italian</span>
-          <p>From the comforting dishes of the countryside to the sophisticated culinary masterpieces of Rome, every morsel is a tribute to Italy’s distinguished gastronomic legacy.</p>
-        </div>
-      </div>
-      
-</div>
+    </div>
+</section>
 
 <div class="footer-page">
     <div class="row">
